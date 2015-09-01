@@ -22,6 +22,7 @@ namespace Method.Intercetption
             yield return Component
                 .For<IService>()
                 .ImplementedBy<Service>()
+                .Interceptors<ConsoleLoggingInterceptor>()
                 .LifeStyle.Singleton;
         }
     }

@@ -3,7 +3,6 @@ using System.Threading;
 
 namespace Method.Intercetption
 {
-    [Interceptor(typeof(ConsoleLoggingInterceptor))]
     public class Service : IService
     {
         public void Do()
